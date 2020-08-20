@@ -1,0 +1,117 @@
+# Searchapp
+import pyttsx3 
+import os 
+
+print()
+pyttsx3.speak("check out available app list to excess the app of your requirement")
+print("list of available app")
+print(' Browser available :')
+print('	1. Google chrome')
+print('	2. Internet Explorer')
+print('	3. Mozilla Firefox')
+
+print(' Editors available :')
+print('	1. Notepad' +'\n'+ '	2. Wordpad'+'\n'+'	3. Code editors')
+print('	   3.1 Visual studio' +'\n'+'	   3.2 Intellij IDEA'+'\n'+'	   3.3 Atom'+'\n'+'	   3.4 Codeblocks')
+
+print(' media player available :')
+print('	1. Wmplayer'+'\n' +'	2.VLC player' + '\n' +'	3. Power media player')
+
+print('To Access CLI :')
+print('	1. Command Prompt' )
+print('	2. Powershell')
+print('	3.Powershell IES')
+
+print("For leaving the app write : Quit or Exit")
+
+print()
+print()
+while True:
+	print("chat with me with your requirements : ", end=' ')
+	p = input()
+	p = p.lower()
+
+	if (("run" in p ) or ("open" in p )or("excess" in p) and ("chrome" in p)  :
+		os.system("chrome")
+	
+	elif (("run" in p ) or ("open" in p ) or("excess" in p) ) and ("internet explorer" in p)  :
+		os.system("start iexplore")
+
+	elif (("run" in p ) or ("open" in p )or("excess"in p))  and ("mozilla firefox" in p)  :
+		os.system("start firefox ")
+	
+	elif(("run" in p ) or ("open" in p)  or("excess" in p) ) and ("editor" in p ):
+		print("which editor you want me to run?")
+		print('	1. Notepad' +'\n'+ '	2. Wordpad'+'\n'+'	3. Code editors')	
+
+	elif (("run" in p) or ("open" in p)  or("excess" in p) ) and (("notepad" in p) or ("notepad editor" in p)):
+		os.system("notepad")
+
+	elif (("run" in p) or ("open" in p)  or("excess"  in p) ) and (("wordpad" in p)or ("wordpad editor" in p)) :
+		os.system("wordpad")
+		
+	elif(("run" in p ) or ("open" in p) or("excess"in p) ) and ("code editor" in p ):
+		print("which code editor you want me to run?")
+		print('	   1 Visual studio' +'\n'+'	   2 Intellij IDEA'+'\n'+'	   3 Atom'+'\n'+'	   4 Codeblocks')
+
+
+	elif (("run" in p) or ("open" in p)  or("excess" in p) ) and ("visual studio" in p):
+		os.system("code")
+
+	elif (("run" in p) or ("open" in p) or("excess" in p)) and (("atom" in p) or ("editor" in p)):
+		os.system("atom")
+
+	elif (("run" in p) or ("open" in p) or("excess" in p)) and (("intellij idea" in p) or ("editor" in p)):
+		os.system("idea64")
+
+	elif (("run" in p) or ("open" in p) or("excess" in p)) and (("codeblocks" in p) or ("editor" in p)):
+		os.system("codeblocks")
+
+
+ 	elif (("run" in p) or ("open" in p) or("excess" in p))  and (("wmplayer" in p) or ("player" in p)):
+		os.system("wmplayer")
+
+	elif (("run" in p) or ("open" in p) or("excess" in p))  and (("VLC" in p) or ("player" in p)):
+		os.system("start vlc")
+
+	elif (("run" in p) or ("open" in p) or("excess" in p))  and (("power media player" in p) or ("player" in p)):
+		os.system("powerdvd")
+
+	elif (("run" in p) or ("open" in p) or("excess" in p))  and (("command prompt" in p) or ("cmd" in p)):
+		os.system("start cmd")
+	
+	elif (("run" in p) or ("open" in p) or("excess" in p))  and ("powershell ies" in p) :
+		os.system("start powershell ies")
+	
+	elif (("run" in p) or ("open" in p) or("excess" in p))  and ("powershell" in p) :
+		os.system("start powershell")
+
+	elif (("exit" in p) or ("quit" in p)):
+		break
+	else:
+		print("don't support")
+		pyttsx3.speak("we don,t support this app check out the list of available app")
+	
+	#you can use this code using twilio api to send whatsapp messages
+	#to run on your firstly run this command 
+  	#make amount on twilio where you can get your twilio account sid and auth token (do not share this credential with others)
+  	#setput environment variable for twilio_accound_sid and twilio_auth_token
+  	#enable virtual env as
+  	#python -m venv pywhatsapp
+  	#virtualenv pywhatsapp
+  	#activate pywhatsapp by going to its directory in which you will find scripts for that diretory you can activate pywhatsapp
+  	#write the below code in any texteditor 
+  	#try out twilio whatsapp to activate sandbox in its brower
+  	#then you can run this code in python to send messages
+		#import os
+		#from twilio.rest import Client
+
+		#client = Client(os.environ['TWILIO_ACCOUNT_SID'],os.environ['TWILIO_AUTH_TOKEN'])
+
+		#from_whatsapp_number = 'whatsapp:+14155238886'
+
+		#to_whatsapp_number = 'whatsapp:+8775615200'
+
+		#message =client.messages.create(body=' i am happy' , from_=from_whatsapp_number,to=to_whatsapp_number)
+
+		#print("send successfully")
