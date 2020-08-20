@@ -92,26 +92,4 @@ while True:
 		print("don't support")
 		pyttsx3.speak("we don,t support this app check out the list of available app")
 	
-	#you can use this code using twilio api to send whatsapp messages
-	#to run on your firstly run this command 
-  	#make amount on twilio where you can get your twilio account sid and auth token (do not share this credential with others)
-  	#setput environment variable for twilio_accound_sid and twilio_auth_token
-  	#enable virtual env as
-  	#python -m venv pywhatsapp
-  	#virtualenv pywhatsapp
-  	#activate pywhatsapp by going to its directory in which you will find scripts for that diretory you can activate pywhatsapp
-  	#write the below code in any texteditor 
-  	#try out twilio whatsapp to activate sandbox in its brower
-  	#then you can run this code in python to send messages
-		#import os
-		#from twilio.rest import Client
-
-		#client = Client(os.environ['TWILIO_ACCOUNT_SID'],os.environ['TWILIO_AUTH_TOKEN'])
-
-		#from_whatsapp_number = 'whatsapp:+14155238886'
-
-		#to_whatsapp_number = 'whatsapp:+8775615200'
-
-		#message =client.messages.create(body=' i am happy' , from_=from_whatsapp_number,to=to_whatsapp_number)
-
-		#print("send successfully")
+	
