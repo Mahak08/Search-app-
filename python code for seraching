@@ -49,7 +49,7 @@ while True:
 		os.system("notepad")
 
 	elif (("run" in p) or ("open" in p)  or ("access"  in p)) and (("wordpad" in p)or ("wordpad editor" in p)) :
-		os.system("wordpad")
+		os.system("start wordpad")
 		
 	elif(("run" in p ) or ("open" in p) or ("access"in p)) and ("code editor" in p ):
 		print("which code editor you want me to run?")
